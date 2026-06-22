@@ -1,0 +1,98 @@
+.sui-modal__mask {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-mask);
+  z-index: var(--z-index-mask);
+  animation: sui-modal-mask-fade-in var(--transition-duration) var(--transition-easing);
+}
+
+.sui-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 520px;
+  max-height: calc(100vh - var(--space-xl) * 2);
+  margin: var(--space-xl);
+  background-color: var(--color-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-index-modal);
+  animation: sui-modal-zoom-in var(--transition-duration) var(--transition-easing);
+  overflow: hidden;
+}
+
+.sui-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sui-modal__title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+.sui-modal__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  transition: all var(--transition-duration) var(--transition-easing);
+}
+
+.sui-modal__close:hover {
+  background-color: var(--color-disabled);
+  color: var(--color-text);
+}
+
+.sui-modal__body {
+  flex: 1;
+  padding: var(--space-lg);
+  overflow-y: auto;
+  color: var(--color-text);
+}
+
+.sui-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+@keyframes sui-modal-mask-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sui-modal-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

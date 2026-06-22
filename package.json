@@ -1,0 +1,64 @@
+{
+  "name": "slimui",
+  "version": "0.1.0",
+  "description": "A lightweight, customizable React 19 component library.",
+  "author": "Vampurity <vampurity@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react19",
+    "typescript",
+    "component-library",
+    "ui",
+    "slimui"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./dist/index.css": "./dist/index.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "format": "biome format . --write"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "jsdom": "^25.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

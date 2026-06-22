@@ -1,0 +1,85 @@
+:root {
+  /* Primary & Semantic Colors */
+  --color-primary: #2563eb;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #0891b2;
+
+  /* Neutral Colors */
+  --color-text: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-text-inverse: #ffffff;
+  --color-bg: #ffffff;
+  --color-border: #d1d5db;
+  --color-disabled: #e5e7eb;
+  --color-mask: rgb(0 0 0 / 0.45);
+
+  /* Typography */
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-sm: 12px;
+  --line-height-base: 1.5;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-duration: 200ms;
+  --transition-easing: ease-in-out;
+
+  /* Z-Index */
+  --z-index-mask: 1000;
+  --z-index-dropdown: 1050;
+  --z-index-modal: 1100;
+}
+
+[data-theme="dark"] {
+  --color-primary: #3b82f6;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+
+  --color-text: #f9fafb;
+  --color-text-secondary: #9ca3af;
+  --color-bg: #111827;
+  --color-border: #374151;
+  --color-disabled: #374151;
+  --color-mask: rgb(0 0 0 / 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-primary: #3b82f6;
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+
+    --color-text: #f9fafb;
+    --color-text-secondary: #9ca3af;
+    --color-bg: #111827;
+    --color-border: #374151;
+    --color-disabled: #374151;
+    --color-mask: rgb(0 0 0 / 0.6);
+  }
+}
