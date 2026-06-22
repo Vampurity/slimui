@@ -4,6 +4,14 @@
   "description": "A lightweight, customizable React 19 component library.",
   "author": "Vampurity <vampurity@qq.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vampurity/slimui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vampurity/slimui/issues"
+  },
+  "homepage": "https://github.com/Vampurity/slimui#readme",
   "keywords": [
     "react",
     "react19",
