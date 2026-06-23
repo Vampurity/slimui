@@ -1,7 +1,10 @@
 {
-  "name": "slimui",
+  "name": "@vampurity/slimui",
   "version": "0.1.0",
   "description": "A lightweight, customizable React 19 component library.",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Vampurity <vampurity@qq.com>",
   "license": "MIT",
   "repository": {

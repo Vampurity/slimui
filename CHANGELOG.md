@@ -4,7 +4,7 @@
 
 ### Features
 
-- Initial release of `slimui`.
+- Initial release of `@vampurity/slimui`.
 - Added 5 core components: `Button`, `Input`, `Card`, `Modal`, `Select`.
 - Built with React 19, TypeScript strict mode, and CSS Modules.
 - Dual-format build: ESM + CJS + TypeScript declarations + CSS + source maps.

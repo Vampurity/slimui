@@ -1,6 +1,6 @@
 # SlimUI
 
-[![npm version](https://badge.fury.io/js/slimui.svg)](https://www.npmjs.com/package/slimui)
+[![npm version](https://img.shields.io/npm/v/@vampurity/slimui.svg)](https://www.npmjs.com/package/@vampurity/slimui)
 
 **English** | [中文](#中文文档)
 
@@ -16,11 +16,11 @@ A lightweight, customizable React 19 component library built with TypeScript.
 ## Installation
 
 ```bash
-npm install slimui
+npm install @vampurity/slimui
 # or
-yarn add slimui
+yarn add @vampurity/slimui
 # or
-pnpm add slimui
+pnpm add @vampurity/slimui
 ```
 
 Peer dependencies:
@@ -34,13 +34,13 @@ npm install react react-dom
 Import the styles once at your application entry point:
 
 ```tsx
-import 'slimui/dist/index.css';
+import '@vampurity/slimui/dist/index.css';
 ```
 
 Then use components:
 
 ```tsx
-import { SButton, SInput, SCard, SModal, SSelect } from 'slimui';
+import { SButton, SInput, SCard, SModal, SSelect } from '@vampurity/slimui';
 
 function App() {
   return (
@@ -67,7 +67,7 @@ import {
   type SelectProps,
   type SelectOption,
   type SelectValue,
-} from 'slimui';
+} from '@vampurity/slimui';
 ```
 
 ## Components
@@ -75,7 +75,7 @@ import {
 ### SButton
 
 ```tsx
-import { SButton } from 'slimui';
+import { SButton } from '@vampurity/slimui';
 
 <SButton variant="primary" size="large" loading={false}>
   Submit
@@ -95,7 +95,7 @@ import { SButton } from 'slimui';
 ### SInput
 
 ```tsx
-import { SInput } from 'slimui';
+import { SInput } from '@vampurity/slimui';
 
 <SInput
   placeholder="Email"
@@ -121,7 +121,7 @@ import { SInput } from 'slimui';
 ### SCard
 
 ```tsx
-import { SCard } from 'slimui';
+import { SCard } from '@vampurity/slimui';
 
 <SCard title="Card Title" actions={<button type="button">Action</button>} shadowed>
   Card content
@@ -141,7 +141,7 @@ import { SCard } from 'slimui';
 ### SModal
 
 ```tsx
-import { SModal } from 'slimui';
+import { SModal } from '@vampurity/slimui';
 
 <SModal open={open} title="Confirm" onClose={() => setOpen(false)}>
   Are you sure?
@@ -161,7 +161,7 @@ import { SModal } from 'slimui';
 ### SSelect
 
 ```tsx
-import { SSelect } from 'slimui';
+import { SSelect } from '@vampurity/slimui';
 
 const options = [
   { label: 'Apple', value: 'apple' },
@@ -220,11 +220,11 @@ SlimUI 是一个轻量、可定制的 React 19 组件库，使用 TypeScript 构
 ## 安装
 
 ```bash
-npm install slimui
+npm install @vampurity/slimui
 # 或
-yarn add slimui
+yarn add @vampurity/slimui
 # 或
-pnpm add slimui
+pnpm add @vampurity/slimui
 ```
 
  peer 依赖：
@@ -238,13 +238,13 @@ npm install react react-dom
 在应用入口处引入样式，**只需引入一次**：
 
 ```tsx
-import 'slimui/dist/index.css';
+import '@vampurity/slimui/dist/index.css';
 ```
 
 然后使用组件：
 
 ```tsx
-import { SButton, SInput, SCard, SModal, SSelect } from 'slimui';
+import { SButton, SInput, SCard, SModal, SSelect } from '@vampurity/slimui';
 
 function App() {
   return (
@@ -271,7 +271,7 @@ import {
   type SelectProps,
   type SelectOption,
   type SelectValue,
-} from 'slimui';
+} from '@vampurity/slimui';
 ```
 
 ## 组件
@@ -279,7 +279,7 @@ import {
 ### SButton 按钮
 
 ```tsx
-import { SButton } from 'slimui';
+import { SButton } from '@vampurity/slimui';
 
 <SButton variant="primary" size="large" loading={false}>
   提交
@@ -299,7 +299,7 @@ import { SButton } from 'slimui';
 ### SInput 输入框
 
 ```tsx
-import { SInput } from 'slimui';
+import { SInput } from '@vampurity/slimui';
 
 <SInput
   placeholder="邮箱"
@@ -325,7 +325,7 @@ import { SInput } from 'slimui';
 ### SCard 卡片
 
 ```tsx
-import { SCard } from 'slimui';
+import { SCard } from '@vampurity/slimui';
 
 <SCard title="卡片标题" actions={<button type="button">操作</button>} shadowed>
   卡片内容
@@ -345,7 +345,7 @@ import { SCard } from 'slimui';
 ### SModal 模态框
 
 ```tsx
-import { SModal } from 'slimui';
+import { SModal } from '@vampurity/slimui';
 
 <SModal open={open} title="确认" onClose={() => setOpen(false)}>
   确定要执行此操作吗？
@@ -365,7 +365,7 @@ import { SModal } from 'slimui';
 ### SSelect 下拉选择
 
 ```tsx
-import { SSelect } from 'slimui';
+import { SSelect } from '@vampurity/slimui';
 
 const options = [
   { label: '苹果', value: 'apple' },
@@ -418,7 +418,7 @@ SlimUI 默认使用亮色主题。开启暗色主题有两种方式：
 
 ## TypeScript 支持
 
-所有组件均使用 TypeScript 严格模式编写，类型定义已随包发布，无需额外安装 `@types/slimui`。
+所有组件均使用 TypeScript 严格模式编写，类型定义已随包发布，无需额外安装 `@types` 包。
 
 ## 许可证
 
